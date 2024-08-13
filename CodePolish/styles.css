@@ -1,0 +1,136 @@
+html, body {
+  font-family: 'Arial', sans-serif; /* Set font family */
+  background: linear-gradient(135deg, #f0f0f0, #d3d3d3); /* Set background gradient */
+  padding: 0px; /* Remove padding */
+  transition: transform 0.2s ease; /* Set transform transition */
+  transform-origin: center center; /* Set transform origin */
+  overflow: hidden; /* Hide overflow */
+}
+
+.container {
+  max-width: 400px; /* Set maximum width */
+  margin: 0 auto; /* Center horizontally */
+  background-color: #ffffff; /* Set background color */
+  padding: 10px; /* Add padding */
+  border: 1px solid #cccccc; /* Add border */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  border-radius: 8px; /* Set border radius */
+  position: relative; /* Set position to relative */
+}
+
+h1 {
+  text-align: center; /* Center text */
+  color: #333333; /* Set text color */
+  font-size: 24px; /* Set font size */
+  margin-top: 0; /* Remove top margin */
+}
+
+form {
+  margin-bottom: 20px; /* Add bottom margin */
+}
+
+label {
+  display: block; /* Display as block */
+  margin-bottom: 10px; /* Add bottom margin */
+  color: #555555; /* Set text color */
+  font-weight: bold; /* Make bold */
+}
+
+textarea {
+  width: 100%; /* Set width to 100% */
+  padding: 10px; /* Add padding */
+  font-size: 12px; /* Set font size */
+  border: 1px solid #cccccc; /* Add border */
+  border-radius: 4px; /* Set border radius */
+  box-sizing: border-box; /* Include border in box sizing */
+  background-color: #f8f8f8; /* Set background color */
+  resize: vertical; /* Allow vertical resize */
+  min-height: 50px; /* Set minimum height */
+  max-height: 300px; /* Set maximum height */
+  overflow: auto; /* Show scrollbar when content exceeds max height */
+}
+
+.button-group {
+  display: flex; /* Display as flex */
+  gap: 10px; /* Add gap between buttons */
+  margin-top: 10px; /* Add top margin */
+}
+
+.button {
+  color: #ffffff; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Set border radius */
+  cursor: pointer; /* Change cursor to pointer */
+  width: 70px; /* Set a fixed width */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Set transition */
+  padding: 4px 15px; /* Set padding */
+  font-size: 12px; /* Set font size */
+  text-align: center; /* Center text */
+}
+
+
+#formatButton {
+  background-color: #28a745; /* Set background color to green */
+}
+
+#formatButton:hover {
+  background-color: #218838; /* Set background color to darker green on hover */
+}
+
+#copyButton {
+  background-color: #007bff; /* Set background color to blue */
+}
+
+#copyButton:hover {
+  background-color: #0056b3; /* Set background color to darker blue on hover */
+}
+
+#clearButton {
+  background-color: #dc3545; /* Set background color to red */
+}
+
+#clearButton:hover {
+  background-color: #c82333; /* Set background color to darker red on hover */
+}
+
+#responseContainer {
+  margin-top: 20px; /* Add top margin */
+  padding: 10px; /* Add padding */
+  border: 1px solid #cccccc; /* Add border */
+  background-color: #e9ecef; /* Set background color */
+  white-space: pre-wrap; /* Preserve line breaks */
+  border-radius: 4px; /* Set border radius */
+  color: #333333; /* Set text color */
+}
+
+.zoom-controls {
+  margin-top: 10px; /* Add top margin */
+  display: flex; /* Display as flex */
+  justify-content: space-between; /* Justify content between space-between */
+}
+
+.zoom-controls .button {
+  flex: 1; /* Take up full width */
+  margin: 0 5px; /* Add margin */
+  background-color: #28a745; /* Set background color to green */
+  color: #ffffff; /* Set text color to white */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Set border radius */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Set transition */
+  padding: 0px 15px; /* Set padding */
+  font-size: 12px; /* Set font size */
+}
+
+.zoom-controls .button:hover {
+  background-color: #218838; /* Set background color to darker green on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+}
+
+.button.reset {
+  background-color: #dc3545; /* Set background color to red */
+}
+
+.button.reset:hover {
+  background-color: #c82333; /* Set background color to darker red on hover */
+}

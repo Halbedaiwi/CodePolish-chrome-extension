@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Chrome Extension</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CodePolish</h1>
+    <form id="myForm">
+      <label for="inputText">Enter Code:</label>
+      <textarea id="inputText" name="inputText"></textarea>
+      <div class="button-group">
+        <button id="formatButton" type="button" class="button">Format</button>
+        <button id="copyButton" type="button" class="button">Copy Output</button> <!-- Copy Button moved next to Clear Button -->
+        <button id="clearButton" type="button" class="button">Clear</button> <!-- Clear Button -->
+        </div>
+    </form>
+    <div id="responseContainer"></div>
+    <div class="zoom-controls">
+      <button id="zoomInButton" type="button" class="button">Zoom In</button>
+      <button id="zoomOutButton" type="button" class="button">Zoom Out</button>
+      <button id="resetButton" type="button" class="button reset">Return to Default</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

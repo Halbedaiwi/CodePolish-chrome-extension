@@ -1,0 +1,35 @@
+{
+    "name": "CodePolish",
+    "version": "1.0",
+    "description": "CodePolish is a versatile Chrome extension designed to format and document your code efficiently. It not only enhances code readability by applying consistent formatting but also generates documentation to help explain the code, making it easier to understand and maintain.",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "activeTab",
+        "commands",
+        "storage"
+    ],
+    "commands": {
+        "open-popup": {
+            "suggested_key": {
+                "default": "Ctrl+E"
+            },
+            "description": "Open the popup"
+        }
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icon16.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        }
+    },
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    }
+}
